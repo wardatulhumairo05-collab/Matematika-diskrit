@@ -1,0 +1,123 @@
+1. # Studi Kasus AND: Penerimaan Mahasiswa
+
+lulus_tes = True
+melengkapi_berkas = True
+membayar_ukt = True
+
+# Model logika
+diterima = lulus_tes and melengkapi_berkas and membayar_ukt
+
+# Output
+if diterima:
+    print("Mahasiswa DITERIMA")s
+else:
+    print("Mahasiswa TIDAK DITERIMA")
+
+# Keluaran: Mahasiswa DITERIMA
+
+2. # Studi Kasus AND: Peminjaman Buku
+
+memiliki_kartu = True
+tidak_ada_tunggakan = True
+buku_tersedia = True
+
+boleh_meminjam = memiliki_kartu and tidak_ada_tunggakan and buku_tersedia
+
+if boleh_meminjam:
+    print("Buku BOLEH dipinjam")
+else:
+    print("Buku TIDAK BOLEH dipinjam")
+
+# Keluaran: Buku BOLEH dipinjam
+
+3. # Studi Kasus AND: Kehadiran Kuliah
+
+hadir_kuliah = True
+mengisi_absen = True
+mengikuti_materi = True
+
+hadir_valid = hadir_kuliah and mengisi_absen and mengikuti_materi
+
+if hadir_valid:
+    print("Kehadiran MAHASISWA VALID")
+else:
+    print("Kehadiran MAHASISWA TIDAK VALID")
+
+# Keluaran: Kehadiran MAHASISWA VALID
+
+4. # Studi Kasus OR: Jalur Penerimaan
+
+jalur_prestasi = True
+jalur_reguler = False
+jalur_mandiri = False
+
+# Model logika
+diterima = jalur_prestasi or jalur_reguler or jalur_mandiri
+
+# Output
+if diterima:
+    print("Mahasiswa memiliki jalur penerimaan")
+else:
+    print("Mahasiswa tidak memiliki jalur penerimaan")
+
+# Keluaran: Mahasiswa memiliki jalur penerimaan
+
+5. # Studi Kasus OR: Prestasi Mahasiswa
+
+prestasi_akademik = False
+prestasi_nonakademik = True
+prestasi_organisasi = False
+
+memiliki_prestasi = prestasi_akademik or prestasi_nonakademik or prestasi_organisasi
+
+if memiliki_prestasi:
+    print("Mahasiswa memiliki PRESTASI")
+else:
+    print("Mahasiswa tidak memiliki prestasi")
+
+# Keluaran: Mahasiswa memiliki PRESTASI
+
+6. # Studi Kasus OR: Perangkat Ujian
+
+laptop = True
+komputer = False
+tablet = False
+
+perangkat = laptop or komputer or tablet
+
+if perangkat:
+    print("Perangkat ujian TERSEDIA")
+else:
+    print("Perangkat ujian TIDAK TERSEDIA")
+
+# Keluaran: Perangkat ujian TERSEDIA
+
+7. # Studi Kasus XOR: Metode Pembayaran
+
+tunai = True
+digital = False
+
+pembayaran = tunai ^ digital
+
+if pembayaran:
+    print("Metode pembayaran VALID")
+else:
+    print("Metode pembayaran TIDAK VALID")
+
+# Keluaran: Metode pembayaran VALID
+
+8. # Studi Kasus XOR: Pilihan Jalur
+
+jalur_online = True
+jalur_offline = False
+
+# Model logika
+pilihan = jalur_online ^ jalur_offline
+
+# Output
+if pilihan:
+    print("Pilihan jalur VALID")
+else:
+    print("Pilihan jalur TIDAK VALID")
+
+# Keluaran: Pilihan jalur VALID
